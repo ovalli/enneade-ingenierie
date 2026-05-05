@@ -320,8 +320,8 @@ img { max-width: 100%; display: block; }
   line-height: 1.6;
 }
 .section-sub sub { font-size: 0.7em; }
-.section-sub a,
-#g2avp p a {
+.section-sub a:not(.btn),
+#g2avp p a:not(.btn) {
   color: var(--color-text);
   text-decoration: underline;
   text-decoration-color: var(--color-accent);
@@ -329,8 +329,8 @@ img { max-width: 100%; display: block; }
   text-underline-offset: 3px;
   transition: text-decoration-color .15s ease;
 }
-.section-sub a:hover,
-#g2avp p a:hover { text-decoration-color: var(--color-text); }
+.section-sub a:not(.btn):hover,
+#g2avp p a:not(.btn):hover { text-decoration-color: var(--color-text); }
 
 .kicker {
   margin: 0 0 10px;
