@@ -68,6 +68,19 @@
           "@type": "Country",
           "name": "France"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.7102,
+          "longitude": 7.2620
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
         "knowsAbout": [
           "Géotechnique",
           "Auscultation géotechnique",
@@ -124,6 +137,76 @@
         "priceCurrency": "EUR",
         "offeredBy": { "@id": "https://enneade-ingenierie.com/#organization" },
         "validFrom": "2026-01-01"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://enneade-ingenierie.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qu'une pré-étude de sol par adresse ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La pré-étude de sol par adresse est un livrable que nous générons à partir de la simple position géographique de votre projet. Elle compile automatiquement les données publiques disponibles : sondages voisins de la BSS du BRGM, contexte géologique régional issu de la BD Charm-50, et aléas cartographiés (PPRN mouvements de terrain, EGMS Copernicus, BD MVT). Elle ne se substitue pas à une mission G1 réglementaire mais permet d'orienter rapidement les premières décisions et de calibrer le programme d'investigations à venir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Combien coûte une étude géotechnique avec Ennéade ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Notre tarification commence à 250 € HT pour une analyse documentaire (jusqu'à 1 000 pages, livrée sous 24 h), 350 € HT pour une analyse d'affaire complète, et 990 € HT/mois pour le suivi hebdomadaire d'un projet en cours. Pour une première collaboration, nous prenons en charge un dossier découverte sans engagement contractuel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelle différence entre GeoExpert-IA et GeoDashboard ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "GeoExpert-IA est un assistant d'analyse documentaire : il lit vos PDF (rapports G1 à G5, sondages pressiométriques, diagraphies), croise avec les bases publiques (BRGM, normes NF P 94-500) et produit des livrables PDF mis en page (notes techniques, fiches mode opératoire, synthèses). GeoDashboard est une plateforme web complémentaire qui visualise et spatialise ces données : scènes 3D, sondages, lithologies, ouvrages géotechniques, suivi des capteurs en service. Les deux outils peuvent être utilisés indépendamment ou en couplage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "L'intelligence artificielle peut-elle remplacer un géotechnicien ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. GeoExpert-IA n'a pas vocation à remplacer l'expertise humaine, mais à la décharger des tâches chronophages : lecture de centaines de pages de rapports, recherche bibliographique, mise en page des notes techniques. La validation technique de chaque livrable est systématiquement faite par un ingénieur Ennéade avant diffusion. Notre principe directeur : la machine traite le volume, l'humain apporte le jugement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment garantissez-vous la confidentialité des dossiers ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Avant tout traitement par l'IA, les noms de projet, d'entreprise, de personnes et les coordonnées géographiques sont anonymisés via des transformations réversibles uniquement en interne. Le livrable diffusé en externe est vérifié automatiquement (vérification zéro-fuite) pour s'assurer qu'aucune donnée sensible ne subsiste. La restauration est faite uniquement en interne pour la version finale validée par l'ingénieur référent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce que la méthode observationnelle en géotechnique ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La méthode observationnelle consiste à confronter en continu les hypothèses de calcul aux mesures réelles d'auscultation (inclinomètres, piézomètres, extensomètres) pendant l'exécution des travaux. Cette boucle permet de détecter précocement les écarts entre modèle et réalité, et d'adapter les soutènements, phasages ou paramètres de projet en conséquence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sur quelles zones géographiques intervenez-vous ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Notre activité physique est basée à Nice (06), principalement sur les Alpes-Maritimes et le pourtour méditerranéen pour les visites de site. Pour les missions documentaires (analyse de dossiers, pré-études par adresse) et le suivi distant d'auscultation, nous intervenons sur l'ensemble du territoire français, métropole et DOM-TOM."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel est le délai pour recevoir un livrable ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Comptez 24 h pour une analyse documentaire de moins de 1 000 pages, et 48 h pour une analyse d'affaire complète (jusqu'à 2 500 pages). Les notes techniques et fiches mode opératoire produites dans le cadre du suivi hebdomadaire sont livrées en quelques heures à 1 jour selon la complexité."
+            }
+          }
+        ]
       }
     ]
   }
@@ -733,6 +816,76 @@
             </p>
           </div>
           <a href="#contact" class="btn btn-primary">Obtenir un devis</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Questions fréquentes</p>
+          <h2>Tout ce que les bureaux d'études et MOA nous demandent</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item">
+            <summary>Qu'est-ce qu'une pré-étude de sol par adresse ?</summary>
+            <div class="faq-answer">
+              <p>La pré-étude de sol par adresse est un livrable que nous générons à partir de la simple position géographique de votre projet. Elle compile automatiquement toutes les données publiques disponibles : sondages voisins de la <strong>BSS du BRGM</strong>, contexte géologique régional issu de la <strong>BD Charm-50</strong>, et aléas cartographiés (PPRN mouvements de terrain, EGMS Copernicus, BD MVT). Elle ne se substitue pas à une mission G1 réglementaire mais permet d'orienter rapidement vos premières décisions et de calibrer le programme d'investigations à venir.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Combien coûte une étude géotechnique avec Ennéade ?</summary>
+            <div class="faq-answer">
+              <p>Notre tarification commence à <strong>250 € HT</strong> pour une analyse documentaire (jusqu'à 1 000 pages, livrée sous 24 h), <strong>350 € HT</strong> pour une analyse d'affaire complète, et <strong>990 € HT/mois</strong> pour le suivi hebdomadaire d'un projet en cours. Pour une première collaboration, nous prenons en charge un dossier découverte, sans engagement contractuel.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quelle différence entre GeoExpert-IA et GeoDashboard ?</summary>
+            <div class="faq-answer">
+              <p><strong>GeoExpert-IA</strong> est un assistant d'analyse documentaire : il lit vos PDF (rapports G1 à G5, sondages pressiométriques, diagraphies), croise avec les bases publiques (BRGM, normes NF P 94-500) et produit des livrables PDF mis en page (notes techniques, fiches mode opératoire, synthèses).</p>
+              <p><strong>GeoDashboard</strong> est une plateforme web complémentaire qui visualise et spatialise ces données : scènes 3D, sondages, lithologies, ouvrages géotechniques, suivi des capteurs en service. Les deux outils peuvent être utilisés indépendamment ou en couplage selon vos besoins.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>L'intelligence artificielle peut-elle remplacer un géotechnicien ?</summary>
+            <div class="faq-answer">
+              <p>Non. GeoExpert-IA n'a pas vocation à remplacer l'expertise humaine, mais à la décharger des tâches chronophages : lecture de centaines de pages de rapports, recherche bibliographique, mise en page des notes techniques. <strong>La validation technique de chaque livrable est systématiquement faite par un ingénieur Ennéade avant diffusion</strong>. Notre principe directeur : la machine traite le volume, l'humain apporte le jugement.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Comment garantissez-vous la confidentialité des dossiers que je vous transmets ?</summary>
+            <div class="faq-answer">
+              <p>Avant tout traitement par l'IA, les noms de projet, d'entreprise, de personnes et les coordonnées géographiques de votre dossier sont anonymisés via des transformations <strong>réversibles uniquement en interne</strong>. Le livrable diffusé en externe est vérifié automatiquement (vérification zéro-fuite) pour s'assurer qu'aucune donnée sensible ne subsiste. La restauration est faite uniquement en interne pour la version finale validée par l'ingénieur référent.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Qu'est-ce que la méthode observationnelle en géotechnique ?</summary>
+            <div class="faq-answer">
+              <p>La méthode observationnelle consiste à confronter en continu les hypothèses de calcul aux mesures réelles d'auscultation (inclinomètres, piézomètres, extensomètres) pendant l'exécution des travaux. Cette boucle permet de détecter précocement les écarts entre modèle et réalité, et d'adapter les soutènements, phasages ou paramètres de projet en conséquence. C'est le cœur de l'expertise d'Ennéade depuis sa création.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Sur quelles zones géographiques intervenez-vous ?</summary>
+            <div class="faq-answer">
+              <p>Notre activité physique est basée à <strong>Nice (06)</strong>, principalement sur les Alpes-Maritimes et le pourtour méditerranéen pour les visites de site et les missions terrain. Pour les missions documentaires (analyse de dossiers, pré-études par adresse) et le suivi distant d'auscultation, nous intervenons sur l'ensemble du territoire français, métropole et DOM-TOM.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Quel est le délai pour recevoir un livrable ?</summary>
+            <div class="faq-answer">
+              <p>Comptez <strong>24 h</strong> pour une analyse documentaire de moins de 1 000 pages, et <strong>48 h</strong> pour une analyse d'affaire complète (jusqu'à 2 500 pages). Les notes techniques et fiches mode opératoire produites dans le cadre du suivi hebdomadaire sont livrées en quelques heures à 1 jour selon la complexité de la demande.</p>
+            </div>
+          </details>
+
         </div>
       </div>
     </section>
