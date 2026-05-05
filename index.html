@@ -3,10 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ennéade Ingénierie — L'expertise géotechnique augmentée par l'IA</title>
-  <meta name="description" content="Ennéade Ingénierie associe l'expertise humaine à l'intelligence artificielle pour accélérer l'analyse géotechnique : synthèses documentaires, notes techniques et auscultation, en quelques heures au lieu de plusieurs semaines." />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+  <!-- Primary -->
+  <title>Ennéade Ingénierie — Bureau d'études géotechniques augmenté par l'IA · Nice</title>
+  <meta name="description" content="Bureau d'études géotechniques basé à Nice. Pré-étude de sol par adresse, scène 3D intégrant sondages BSS et auscultation, analyse documentaire IA et livrables PDF prêts à diffuser." />
+  <meta name="author" content="Ennéade Ingénierie" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0F172A" />
+  <link rel="canonical" href="https://enneade-ingenierie.com/" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon.png" />
+
+  <!-- Open Graph (LinkedIn, Facebook, WhatsApp, Slack…) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Ennéade Ingénierie" />
+  <meta property="og:title" content="Ennéade Ingénierie — L'expertise géotechnique augmentée par l'IA" />
+  <meta property="og:description" content="Pré-étude de sol par simple adresse, scène 3D du sous-sol intégrant sondages BSS et auscultation, livrables PDF en quelques heures. Bureau d'études géotechniques à Nice." />
+  <meta property="og:url" content="https://enneade-ingenierie.com/" />
+  <meta property="og:image" content="https://enneade-ingenierie.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Ennéade Ingénierie — l'expertise géotechnique augmentée par l'IA" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ennéade Ingénierie — L'expertise géotechnique augmentée par l'IA" />
+  <meta name="twitter:description" content="Pré-étude de sol par simple adresse, scène 3D du sous-sol, livrables PDF en quelques heures. Bureau d'études géotechniques à Nice." />
+  <meta name="twitter:image" content="https://enneade-ingenierie.com/assets/og-image.png" />
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://enneade-ingenierie.com/#organization",
+        "name": "Ennéade Ingénierie",
+        "url": "https://enneade-ingenierie.com/",
+        "logo": "https://enneade-ingenierie.com/assets/logo.png",
+        "image": "https://enneade-ingenierie.com/assets/og-image.png",
+        "description": "Bureau d'études géotechniques basé à Nice. Conçoit et opère GeoExpert-IA (assistant d'analyse documentaire) et GeoDashboard (plateforme de visualisation 2D/3D et de pilotage de projet géotechnique).",
+        "telephone": "+33781272927",
+        "email": "contact@enneade-ingenierie.com",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "8 avenue Vaillant",
+          "postalCode": "06200",
+          "addressLocality": "Nice",
+          "addressRegion": "Provence-Alpes-Côte d'Azur",
+          "addressCountry": "FR"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "France"
+        },
+        "knowsAbout": [
+          "Géotechnique",
+          "Auscultation géotechnique",
+          "Instrumentation géotechnique",
+          "Pré-étude de sol",
+          "Méthode observationnelle",
+          "Sondages pressiométriques",
+          "Inclinomètre",
+          "Piézomètre",
+          "Plaxis",
+          "Intelligence artificielle appliquée à la géotechnique"
+        ],
+        "sameAs": [
+          "https://myenneade.com"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://enneade-ingenierie.com/#geoexpert-ia",
+        "name": "GeoExpert-IA",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Assistant d'analyse géotechnique par intelligence artificielle. Lecture directe de PDF (rapports G1–G5, sondages, diagraphies), connexion native à la base BRGM (BSS, InfoTerre, BD Charm-50), production de livrables PDF mis en page (notes techniques, fiches mode opératoire, synthèses, bibliographies).",
+        "provider": { "@id": "https://enneade-ingenierie.com/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "price": "250",
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": "250",
+            "priceCurrency": "EUR",
+            "valueAddedTaxIncluded": false
+          },
+          "description": "À partir de 250 € HT pour une analyse documentaire (≤1 000 pages, livrée sous 24 h)."
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://enneade-ingenierie.com/#geodashboard",
+        "name": "GeoDashboard",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://myenneade.com",
+        "description": "Plateforme web de visualisation 2D/3D et de pilotage de projet géotechnique. Génère une scène 3D pour toute adresse, intègre sondages BRGM, sondages site, et mesures d'auscultation en temps réel (inclinomètres, piézomètres, extensomètres).",
+        "provider": { "@id": "https://enneade-ingenierie.com/#organization" }
+      },
+      {
+        "@type": "Offer",
+        "@id": "https://enneade-ingenierie.com/#dossier-decouverte",
+        "name": "Dossier découverte",
+        "description": "Première étude géotechnique offerte (analyse documentaire ou pré-étude de sol par adresse, scène 3D, restitution avec un ingénieur). Sans engagement contractuel.",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "offeredBy": { "@id": "https://enneade-ingenierie.com/#organization" },
+        "validFrom": "2026-01-01"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex,nofollow" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: #0F172A;
+    color: #fff;
+    position: relative;
+    padding: 64px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body::before {
+    content: "";
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle at 85% 20%, rgba(118,123,133,0.30), transparent 55%),
+      radial-gradient(circle at 12% 90%, rgba(22,163,74,0.16), transparent 55%);
+    pointer-events: none;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+  }
+  .logo {
+    width: 56px; height: 56px;
+    border-radius: 12px;
+    background: #fff;
+    display: flex; align-items: center; justify-content: center;
+    padding: 6px;
+  }
+  .logo img { width: 100%; height: 100%; object-fit: contain; }
+  .brand {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .brand-suffix { color: rgba(255,255,255,0.55); font-weight: 500; }
+  .badge {
+    margin-left: auto;
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 8px 16px 8px 14px;
+    border-radius: 999px;
+    background: rgba(22,163,74,0.12);
+    border: 1px solid rgba(22,163,74,0.35);
+    color: #4ade80;
+    font-size: 14px; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .badge-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #16a34a;
+    box-shadow: 0 0 0 4px rgba(22,163,74,0.18);
+  }
+  .center {
+    position: relative;
+    margin-top: -8px;
+  }
+  .eyebrow {
+    color: #94a3b8;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    max-width: 1000px;
+  }
+  .grad {
+    background: linear-gradient(135deg, #fff 0%, #cbd5e1 50%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lede {
+    margin-top: 24px;
+    color: rgba(255,255,255,0.75);
+    font-size: 22px;
+    line-height: 1.45;
+    max-width: 880px;
+    font-weight: 400;
+  }
+  .lede strong { color: #fff; font-weight: 600; }
+  .bottom {
+    position: relative;
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .url {
+    color: rgba(255,255,255,0.65);
+    font-size: 18px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .tags {
+    display: flex; gap: 10px;
+  }
+  .tag {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.85);
+    font-size: 15px; font-weight: 500;
+  }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="logo"><img src="logo.png" alt="" /></div>
+    <div class="brand">Ennéade<span class="brand-suffix"> Ingénierie</span></div>
+    <div class="badge"><span class="badge-dot"></span>Bureau d'études · Nice</div>
+  </div>
+
+  <div class="center">
+    <p class="eyebrow">Géotechnique × IA</p>
+    <h1>L'expertise géotechnique,<br/><span class="grad">augmentée par l'IA.</span></h1>
+    <p class="lede">
+      Pré-étude de sol par adresse, scène <strong>3D</strong> intégrant sondages et auscultation,
+      livrables <strong>PDF</strong> en quelques heures.
+    </p>
+  </div>
+
+  <div class="bottom">
+    <span class="url">enneade-ingenierie.com</span>
+    <div class="tags">
+      <span class="tag">GeoExpert-IA</span>
+      <span class="tag">GeoDashboard</span>
+    </div>
+  </div>
+</body>
+</html>
